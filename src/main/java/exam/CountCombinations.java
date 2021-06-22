@@ -24,7 +24,6 @@ public class CountCombinations {
 		findNumbers(ans, arr, sum, 0, temp);
 		return ans;
 	}
-
 	static void
 	findNumbers(ArrayList<ArrayList<Integer> > ans,
 				ArrayList<Integer> arr, int sum, int index,
@@ -51,7 +50,7 @@ public class CountCombinations {
 				temp.add(arr.get(i));
 
 				findNumbers(ans, arr, sum - arr.get(i), i,
-							temp);
+						temp);
 
 				// removing element from list (backtracking)
 				temp.remove(arr.get(i));
